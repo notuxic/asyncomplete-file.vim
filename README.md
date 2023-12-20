@@ -3,8 +3,6 @@ asyncomplete-file.vim
 
 Filename completion source for [asyncomplete.vim](https://github.com/prabirshrestha/asyncomplete.vim).
 
-Uses *vim*'s builtin file completion via `getcompletion()`.
-
 
 Install
 -------
@@ -38,4 +36,10 @@ By default, *asyncomplete-file.vim* will ignore files specified in `wildignore`.
 
 ```
 let g:asyncomplete_file_respect_wildignore = 0
+```
+
+*asyncomplete-file.vim* also supports fuzzy-matching:
+
+```
+let g:asyncomplete_file_fuzzymatch = 1
 ```
